@@ -1,0 +1,25 @@
+.popup__error:nth-of-type(odd) {
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF0000;
+    position: relative;
+    top: -20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.popup__error:nth-of-type(even) {
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF0000;
+    position: relative;
+    top: 4px;
+    margin: 0;
+    opacity: 0;
+}
+
+.popup__error_visible {
+  opacity: 1 !important;
+}
