@@ -3,10 +3,11 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const Error500 = require('../errors/500-err');
 const NotFoundError = require('../errors/not-found-err');
+const req_err = require('../errors/req-err');
 
 // eslint-disable-next-line consistent-return
 module.exports.createUser = (req, res, next) => {
-  if (Object.keys(req.body).length === 0) return res.status(400).send({ message: 'Тело запроса пустое' });
+  if (Object.keys(req.body).length === 0) {next(new req_err('Произошла ошибка при чтении списка пользователей')); return;}
   const {
     name, about, avatar, email, password,
   } = req.body;
