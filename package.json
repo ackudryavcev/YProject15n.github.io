@@ -1,0 +1,35 @@
+{
+  "name": "sprint-15",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "author": "Alexey Kudryavcev",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^10.0.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.1",
+    "helmet": "^3.21.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.6",
+    "path": "^0.12.7",
+    "validator": "^11.1.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2",
+    "supertest": "^4.0.2"
+  }
+}
